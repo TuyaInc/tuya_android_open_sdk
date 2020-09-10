@@ -137,7 +137,7 @@ tuyaDevice.publishCommands(dpCodeMap, new IResultCallback() {
 
 ```groovy
 // homesdk 依赖，注意，必须使用大于等于此版本的SDK
-implementation 'com.tuya.smart:tuyasmart-tuyahomesdk:3.17.9'
+implementation 'com.tuya.smart:tuyasmart:3.17.9'
 // 控制SDK依赖
 implementation 'com.tuya.smart:tuyasmart-centralcontrol:1.0.0beta2'
 ```
