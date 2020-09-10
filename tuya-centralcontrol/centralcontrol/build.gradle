@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'upload'
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -28,17 +28,8 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.tuya.smart:tuyasmart:3.17.10'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.alibaba:fastjson:1.1.64.android'
-}
-
-upInfo {
-    version = "1.0.2-SNAPSHOT"
-    groupId = "com.tuya.smart"
-    artifactId = "tuyasmart-centralcontrol"
-    hasPomDepend = false
-}
-repositories {
-    mavenCentral()
+    implementation 'com.tuya.smart:tuyasmart:3.17.9'
+    implementation 'com.tuya.smart:tuyasmart-centralcontrol:1.0.0beta2'
 }
